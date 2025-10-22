@@ -28,7 +28,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTituloResultados"
-        tools:text="Nombre: Ana María" />
+        tools:text="Nombre: " />
 
     <TextView
         android:id="@+id/tvEdad"
@@ -38,7 +38,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvNombre"
-        tools:text="Edad: 18 años" />
+        tools:text="Edad: " />
 
     <TextView
         android:id="@+id/tvIdioma"
@@ -48,6 +48,6 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvEdad"
-        tools:text="Idioma: Francés" />
+        tools:text="Idioma: " />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
