@@ -10,55 +10,55 @@
         android:id="@+id/textViewFormulario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="90dp"
+        android:layout_marginTop="72dp"
         android:text="FORMULARIO"
-        android:textSize="24sp"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@+id/editTextName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/editTextName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="55dp"
+        android:layout_marginTop="15dp"
         android:ems="10"
         android:hint="Tu nombre..."
         android:inputType="text"
-        app:layout_constraintBottom_toTopOf="@+id/textViewEdad"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFormulario" />
 
     <TextView
         android:id="@+id/textViewEdad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="31dp"
+        android:layout_marginTop="84dp"
         android:text="EDAD"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/seekBarEdad"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextName" />
 
     <SeekBar
         android:id="@+id/seekBarEdad"
-        android:layout_width="0dp"
+        android:layout_width="293dp"
         android:layout_height="28dp"
-        android:layout_marginStart="59dp"
-        android:layout_marginEnd="59dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewEdad" />
 
     <TextView
         android:id="@+id/textViewEdadModificada"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="31dp"
+        android:layout_marginEnd="48dp"
         android:text="Edad: 0 años"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,43 +68,42 @@
         android:id="@+id/textViewIdioma"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="18dp"
+        android:layout_marginTop="124dp"
         android:text="IDIOMA"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/spinnerIdioma"
-        app:layout_constraintEnd_toStartOf="@+id/textViewEdadModificada" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seekBarEdad" />
 
     <Spinner
         android:id="@+id/spinnerIdioma"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginTop="53dp"
-        android:layout_marginEnd="1dp"
+        android:layout_width="343dp"
+        android:layout_height="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewEdadModificada" />
+        app:layout_constraintTop_toBottomOf="@+id/textViewIdioma" />
 
     <Button
         android:id="@+id/botonEnviar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="72dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="124dp"
         android:backgroundTint="@color/green"
         android:text="ENVIAR"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIdioma" />
 
     <Button
         android:id="@+id/botonReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="49dp"
-        android:layout_marginBottom="41dp"
+        android:layout_marginTop="124dp"
         android:backgroundTint="#FF5722"
         android:text="RESET"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.692"
+        app:layout_constraintStart_toEndOf="@+id/botonEnviar"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIdioma" />
 </androidx.constraintlayout.widget.ConstraintLayout>
