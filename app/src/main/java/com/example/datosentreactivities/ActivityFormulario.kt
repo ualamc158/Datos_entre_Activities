@@ -94,7 +94,7 @@ class ActivityFormulario : AppCompatActivity() {
             }
 
             if (!isIdiomaValid) {
-                // Mostramos un Toast
+                // Mostramos un Toast si no hay ningún idioma seleccionado
                 Toast.makeText(this, "Debes seleccionar un idioma!!", Toast.LENGTH_SHORT).show()
             }
         }

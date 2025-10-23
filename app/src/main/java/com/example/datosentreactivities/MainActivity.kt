@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
 
             // Asignamos los datos a los TextViews
             binding.tvNombre.text = "Nombre: $nombre"
-            binding.tvEdad.text = "Edad: $edad años" // Añadí "años" para claridad
+            binding.tvEdad.text = "Edad: $edad años"
             binding.tvIdioma.text = "Idioma: $idioma"
         }
     }
